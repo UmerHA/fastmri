@@ -18,11 +18,6 @@ def show(self:TensorMri, plane='a', slice=None, ctx=None, **kw):
     show_mri(self, plane, slice, ctx=ctx, **kw)
 
 def bin_mids(start, end, n):
-    e = linspace(start, end, n+1)
-    return ((e[:-1]+e[1:])/2).int()
-
-
-def bin_mids(start, end, n):
     o = linspace(start, end, n+1)
     return ((o[:-1]+o[1:])/2).int()
 
