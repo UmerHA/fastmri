@@ -28,4 +28,4 @@ def show_all(self:TensorMri, n=5, **kw):
         slices = bin_mids(0,self.shape[i]-1,5)
         for s,a in zip(slices,ax): self.show(i,s,ctx=a)
 
-__all__ = 'get_slice TensorMri'
+__all__ = 'get_slice TensorMri'.split()
